@@ -1,6 +1,7 @@
 header {
   background-color: white;
-  .logo-contaner {
+  .logo-container {
+    text-align: center;
     img {
       height: 60px;
       margin: 5px 0;
@@ -26,10 +27,14 @@ header {
         text-transform: uppercase;
         -webkit-transition: all 0.2s ease-in-out;
         &:hover {
-          color: rgb(163, 163, 163);
+          html.no-touch & {
+            color: rgb(163, 163, 163);
+          }
         }
         &:active {
-          color: black;
+          html.no-touch & {
+            color: black;
+          }
         }
       }
     }
