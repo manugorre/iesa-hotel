@@ -1,7 +1,10 @@
 extends layouts/default
 
 block content
-  .row
+
+  include includes/header
+
+  main.row
     .col-lg-8.hero-unit
       h2 'MAIN PAGE,
       p You now have
@@ -9,3 +12,5 @@ block content
         li HTML5 Boilerplate
         li Sass
         li Modernizr
+
+  include includes/footer
