@@ -8,8 +8,10 @@ header {
     li {
       display: inline-block;
       width: 33%;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       text-align: center;
+      font-family: $font-body;
+      font-weight: bold;
       a {
         display: block;
         cursor: pointer;
