@@ -1,13 +1,15 @@
 // bower:scss
 // endbower
+@import 'conf/fonts';
 
 @import 'bootstrap';
 @import 'normalize';
 
+@import 'base';
 
+@import 'heade';
 
-@import 'header';
-
-
+@import 'slider';
+//@import 'components/card';
 
 @import 'footer';
