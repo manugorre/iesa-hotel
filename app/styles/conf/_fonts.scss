@@ -1,0 +1,46 @@
+$font-body: lato, Arial;
+$font-headings: lustria;
+// //////////////////////////////
+// LATO
+// //////////////////////////////
+
+@font-face{
+	font-family: "lato";
+  font-style: normal;
+  font-weight: normal;
+	src: url("../fonts/lato/Lato-Regular.ttf");
+}
+// ITALIC
+@font-face{
+	font-family: "lato";
+  font-style: normal;
+  font-weight: lighter;
+	src: url("../fonts/lato/Lato-Light.ttf");
+}
+@font-face{
+	font-family: "lato";
+  font-style: italic;
+	src: url("../fonts/lato/Lato-LightItalic.ttf");
+}
+// BOLD
+@font-face{
+	font-family: "lato";
+	src: url("../fonts/lato/Lato-Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face{
+	font-family: "lato";
+	src: url("../fonts/lato/Lato-BoldItalic.ttf");
+  font-style: italic;
+  font-weight: bold;
+}
+
+// //////////////////////////////
+// Lustria
+// //////////////////////////////
+
+@font-face{
+	font-family: "lustria";
+	src: url("../fonts/lustria/lustria-regular.ttf");
+}
