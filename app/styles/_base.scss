@@ -8,3 +8,22 @@ body {
   padding: 0 !important;
   margin: 0 !important;
 }
+
+.btn-main {
+  border: 0;
+  border-radius: 2px;
+  background: #68b14d;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+  letter-spacing: 0.5px;
+  padding: 15px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 1;
+  }
+}

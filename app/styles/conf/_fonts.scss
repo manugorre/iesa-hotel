@@ -1,38 +1,20 @@
-$font-body: lato, Arial;
-$font-headings: lustria;
+$font-body: source sans pro;
+$font-headings: lora, Arial;
 // //////////////////////////////
 // LATO
 // //////////////////////////////
 
 @font-face{
-	font-family: "lato";
+	font-family: "lora";
   font-style: normal;
   font-weight: normal;
-	src: url("../fonts/lato/Lato-Regular.ttf");
-}
-// ITALIC
-@font-face{
-	font-family: "lato";
-  font-style: normal;
-  font-weight: lighter;
-	src: url("../fonts/lato/Lato-Light.ttf");
-}
-@font-face{
-	font-family: "lato";
-  font-style: italic;
-	src: url("../fonts/lato/Lato-LightItalic.ttf");
+	src: url("../fonts/lora/Lora-Regular.ttf");
 }
 // BOLD
 @font-face{
-	font-family: "lato";
-	src: url("../fonts/lato/Lato-Bold.ttf");
+	font-family: "lora";
+	src: url("../fonts/lora/Lora-Bold.ttf");
   font-style: normal;
-  font-weight: bold;
-}
-@font-face{
-	font-family: "lato";
-	src: url("../fonts/lato/Lato-BoldItalic.ttf");
-  font-style: italic;
   font-weight: bold;
 }
 
@@ -41,6 +23,29 @@ $font-headings: lustria;
 // //////////////////////////////
 
 @font-face{
-	font-family: "lustria";
-	src: url("../fonts/lustria/lustria-regular.ttf");
+	font-family: "source sans pro";
+  font-style: normal;
+  font-weight: normal;
+	src: url("../fonts/sourcesanspro/SourceSansPro-Regular.ttf");
+}
+
+@font-face{
+  font-family: "source sans pro";
+  font-style: normal;
+  font-weight: lighter;
+  src: url("../fonts/sourcesanspro/SourceSansPro-Light.ttf");
+}
+
+@font-face{
+  font-family: "source sans pro";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/sourcesanspro/SourceSansPro-Semibold.ttf");
+}
+
+@font-face{
+  font-family: "source sans pro";
+  font-style: normal;
+  font-weight: bolder;
+  src: url("../fonts/sourcesanspro/SourceSansPro-Bold.ttf");
 }
