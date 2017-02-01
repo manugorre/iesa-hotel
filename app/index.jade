@@ -5,12 +5,12 @@ block content
   include includes/header
 
   main.row
-    .col-lg-8.hero-unit
-      h2 'MAIN PAGE,
-      p You now have
-      ul
-        li HTML5 Boilerplate
-        li Sass
-        li Modernizr
-
+    .card-container.col-sm-8
+      include includes/components/littlecard
+    
+      include includes/components/littlecard
+    
+      include includes/components/littlecard
+        
+  
   include includes/footer
