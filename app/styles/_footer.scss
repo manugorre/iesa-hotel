@@ -1,13 +1,52 @@
 footer {
 	background: $grey-thunder;
-	color : $white;
+	color : $grey-silver;
 	padding : 50px 0;
 	font-family: $font-body;
 	.footer-list{
+		margin-top: 0;
 		list-style : none;
+		padding : 0;
+		a {
+			color : $grey-silver;
+			&:hover{
+				color : white;
+			}
+		}
+	}
+
+	.footer_form-newsletter{
+		border-bottom: 1px solid $grey-silver;
+		input{
+			width: 80%;
+			background: transparent;
+			padding: 10px 0;
+			border: none;
+			font-size: 1.2rem;
+			font-family: $font-body;
+			&:focus{
+				outline: none;
+			}	
+		}
+		button{
+			display: inline-block;
+			width:18%;
+			border: none;
+			background: transparent;
+			vertical-align: middle;
+			svg{
+				fill: $grey-silver;
+			}
+			&:hover{
+				svg {
+					fill : white;
+				}
+			}
+		}
+
 	}
 
 	.footerception{
-		border-top: 1px solid $white;
+		border-top: 1px solid $grey-silver;
 	}
 }
