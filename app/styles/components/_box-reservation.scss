@@ -1,6 +1,8 @@
-.box-reservation-container {
+.up-me .box-reservation-container {
   top: -45px;
   position: relative;
+}
+.box-reservation-container {
   .title {
     display: block;
     text-transform: uppercase;
@@ -40,12 +42,6 @@
   .value-desc {
     font-family: $font-headings;
     font-size: 2rem;
-  }
-
-  @media (max-width: 768px) {
-    .box-reservation {
-      box-shadow: none;
-    }
   }
   .box-reservation {
     height: 100px;
@@ -89,6 +85,14 @@
       transform: rotate(-45deg);
       position: relative;
       left: -4px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box-reservation-container {
+    .box-reservation {
+      box-shadow: none;
     }
   }
 }

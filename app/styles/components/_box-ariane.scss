@@ -1,0 +1,33 @@
+.box-ariane {
+  text-align: center;
+  li {
+    display: inline-block;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .link {
+    margin-right: 5px;
+    &:after, &:before {
+      content: '';
+      display: inline-block;
+      width: 1px;
+      height: 4px;
+      color: gray;
+    }
+
+    a {
+      color: gray;
+      font-size: 1.1rem;
+      font-weight: bold;
+      letter-spacing: 0.2px;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        html.no-touch & {
+          color: black;
+        }
+      }
+    }
+  }
+}

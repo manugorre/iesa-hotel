@@ -1,0 +1,32 @@
+extends layouts/default
+
+block content
+
+  include includes/header
+
+  main.row
+    .col-md-12
+      .row
+        .col-md-12
+          h2.main-title.text-center Reservation
+          ul.box-ariane
+            li.link
+              a(href="#") Home
+            li.link
+              a(href="#") Home
+            li Reservation
+
+          h3.medium-title.text-center Reservation
+
+          h3.medium-title.text-center Rooms available for you
+
+          h3.medium-title.text-center Your booking overview
+
+          h3.medium-title.text-center Confirm your reservation
+      .row
+        .col-md-12
+          include includes/box-reservation
+      .row
+        .col-md-12
+
+  include includes/footer
