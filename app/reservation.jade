@@ -5,7 +5,7 @@ block content
   include includes/header
 
   main.row
-    .col-md-12
+    .col-md-12.bg-grey
       .row
         .col-md-12
           h2.main-title.text-center Reservation
@@ -15,18 +15,16 @@ block content
             li.link
               a(href="#") Home
             li Reservation
-
-          h3.medium-title.text-center Reservation
-
+      .row
+        .col-md-12
+          h3.medium-title.text-center Make your reservation
+          include includes/box-reservation
+      .row
+        .col-md-12
           h3.medium-title.text-center Rooms available for you
 
           h3.medium-title.text-center Your booking overview
 
           h3.medium-title.text-center Confirm your reservation
-      .row
-        .col-md-12
-          include includes/box-reservation
-      .row
-        .col-md-12
 
   include includes/footer
