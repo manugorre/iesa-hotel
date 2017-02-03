@@ -1,0 +1,40 @@
+.box-reservation-room {
+  margin-bottom: 30px;
+  @extend .f0;
+  > div {
+    background: white;
+  }
+  .thumbnail {
+    width: 200px;
+  }
+
+  .box-reservation-info {
+    width: calc(100% - 200px);
+    display: inline-block;
+  }
+
+  .title {
+    font-family: $font-headings;
+    margin: 0;
+  }
+
+  .input-checkbox {
+    display: none;
+    &:checked + .input-checkbox-label {
+      .btn-selected {
+        display: block;
+      }
+      .btn-to-selecte {
+        display: none;
+      }
+    }
+  }
+  .input-checkbox-label {
+    .btn-selected {
+      display: none;
+    }
+    .btn-to-selecte {
+      display: block;
+    }
+  }
+}

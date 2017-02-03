@@ -15,8 +15,15 @@ ul {
   background-color: rgb(238, 238, 238);
 }
 
+.f0{
+  font-size: 0px;
+}
+
 .nopadding {
   padding: 0 !important;
+}
+
+.nomargin {
   margin: 0 !important;
 }
 
@@ -44,6 +51,32 @@ ul {
   border: 0;
   border-radius: 2px;
   background: #68b14d;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+  letter-spacing: 0.5px;
+  padding: 15px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  &:hover {
+    html.no-touch & {
+      box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.22);
+    }
+  }
+  &:active {
+    html.no-touch & {
+      box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.42);
+    }
+  }
+  &.checked {
+
+  }
+}
+
+.btn-grey {
+  border: 0;
+  border-radius: 2px;
+  background: #b2b5b1;
   text-transform: uppercase;
   font-size: 1rem;
   color: white;
