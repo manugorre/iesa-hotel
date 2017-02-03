@@ -4,12 +4,15 @@ block content
 
   include includes/header
 
-  main
-    .row
-      .col-md-12.slider.nopadding
-        include includes/slider
-    .row
-      .col-md-12
-        include includes/box-reservation
+  main.row
+    .col-md-12
+      .row
+        .col-md-12.slider.nopadding
+          include includes/slider
+      .row
+        .col-md-12.height-zero.up-me
+          include includes/box-reservation
+      .row
+        .col-md-12
 
   include includes/footer

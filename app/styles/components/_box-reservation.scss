@@ -1,0 +1,98 @@
+.up-me .box-reservation-container {
+  top: -45px;
+  position: relative;
+}
+.box-reservation-container {
+  .title {
+    display: block;
+    text-transform: uppercase;
+    color: #585858;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: $font-body;
+  }
+  .value {
+    font-family: $font-headings;
+    font-size: 4rem;
+  }
+  .value-2 {
+    font-family: $font-headings;
+    font-size: 1.5rem;
+    &:before {
+      content: '/ ';
+      position: relative;
+      top: -3px;
+      margin-left: 10px;
+      font-size: 1.2rem;
+    }
+  }
+  .value-select {
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    width: calc(100% - 20px);
+    height: 65%;
+    left: 20px;
+    -webkit-appearance: none;
+    outline: none;
+    color: transparent;
+    position: absolute;
+    background: transparent;
+  }
+  .value-desc {
+    font-family: $font-headings;
+    font-size: 2rem;
+  }
+  .box-reservation {
+    height: 100px;
+    background: white;
+    box-shadow: 0px 11px 30px 0px rgba(119, 119, 119, 0.53);
+    & > * {
+      padding: 20px;
+      height: 100%;
+    }
+    .check-availibility {
+      line-height: 57px;
+      text-align: center;
+      background: rgba(215, 222, 224, 1);;
+    }
+    .date-selector:after {
+      content: '';
+      background: #a7a7a7;
+      width: 1px;
+      height: calc(100% - 30px);
+      display: inline-block;
+      position: absolute;
+      top: 15px;
+      right: 0;
+    }
+  }
+  .arrow {
+    position: absolute;
+    right: 20px;
+    top: 55px;
+    &:after, &:before {
+      content: '';
+      display: inline-block;
+      width: 1px;
+      height: 8px;
+      background: #333333;
+    }
+    &:after {
+      transform: rotate(45deg);
+    }
+    &:before {
+      transform: rotate(-45deg);
+      position: relative;
+      left: -4px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box-reservation-container {
+    .box-reservation {
+      box-shadow: none;
+    }
+  }
+}
