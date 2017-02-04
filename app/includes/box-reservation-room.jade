@@ -1,43 +1,51 @@
 .row.box-reservation-room
-  .col-md-8.col-md-offset-2.nopadding
-    img(src="http://fakeimg.pl/250x150/").thumbnail
+  .col-md-8.col-md-offset-2.nopadding.box-shadow
+    img(src="images/chambre.jpg" alt="Image de la chambre").thumbnail
     .box-reservation-info
       .col-sm-6
         h4.title Classic Room
-        ul
-          li Beds
-            span 02
-          li Passenger
-            span 04
+        ul.info-list
+          li Beds:
+            span  02
+          li Passenger:
+            span  04
       .col-sm-6
+        .price-container
+          div.price 450€
+            span.by-night / Night
         .room-number-selector
-          span Rooms
+          span.arrow Rooms
           select
             option 01
             option 02
+        .room-selector-container
           input(type="checkbox" id="id4").input-checkbox
           label(for="id4").input-checkbox-label
-            .btn-to-selecte.btn-grey.text-center  Choisir cette chambre
-            .btn-selected.btn-main.text-center.checked Séléctionné
+            span.btn-to-selecte.btn-grey.text-center  Choisir
+            span.btn-selected.btn-main.text-center.checked Séléctionné
 
 .row.box-reservation-room.selected
-  .col-md-8.col-md-offset-2.nopadding
-    img(src="http://fakeimg.pl/250x150/").thumbnail
+  .col-md-8.col-md-offset-2.nopadding.box-shadow
+    img(src="images/chambre.jpg" alt="Image de la chambre").thumbnail
     .box-reservation-info
       .col-sm-6
         h4.title Classic Room
-        ul
-          li Beds
-            span 02
-          li Passenger
-            span 04
+        ul.info-list
+          li Bed:
+            span  02
+          li Passenger:
+            span  04
       .col-sm-6
+        .price-container
+          div.price 450€
+            span.by-night / Night
         .room-number-selector
-          span Rooms
+          span.arrow Rooms
           select
             option 01
             option 02
+        .room-selector-container
           input(type="checkbox" id="id42" checked).input-checkbox
           label(for="id42").input-checkbox-label
-            .btn-to-selecte.btn-grey.text-center  Choisir cette chambre
-            .btn-selected.btn-main.text-center.checked Séléctionné
+            span.btn-to-selecte.btn-grey.text-center  Choisir
+            span.btn-selected.btn-main.text-center.checked Séléctionné

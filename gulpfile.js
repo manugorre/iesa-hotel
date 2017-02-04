@@ -6,11 +6,12 @@ const del = require('del');
 const wiredep = require('wiredep').stream;
 const runSequence = require('run-sequence');
 const concat = require('gulp-concat');
+const w3cjs = require('gulp-w3cjs');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
-var dev = true;
+var dev = false;
 
 gulp.task('views', function () {
   return gulp.src('app/*.jade')
@@ -68,6 +69,12 @@ gulp.task('html', ['styles', 'scripts'], () => {
     .pipe($.if('*.css', $.cssnano({safe: true, autoprefixer: false})))
     .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
     .pipe(gulp.dest('dist'));
+});
+
+gulp.task('w3cjs', function () {
+  gulp.src('.tmp/*.html')
+    .pipe(w3cjs())
+    .pipe(w3cjs.reporter());
 });
 
 gulp.task('images', () => {
