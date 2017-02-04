@@ -1,0 +1,108 @@
+.box-reservation-room {
+  margin-bottom: 30px;
+  @extend .f0;
+  > div {
+    background: white;
+  }
+  .thumbnail {
+    width: 200px;
+    vertical-align: middle;
+  }
+
+  .box-reservation-info {
+    width: calc(100% - 200px);
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .title {
+    font-family: $font-headings;
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .info-list {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    li {
+      color: #c5c5c5;
+      span {
+        color: black;
+      }
+    }
+  }
+
+  .price-container {
+    width: 100%;
+    display: inline-block;
+    font-size: 2rem;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+
+  .room-selector-container, .room-number-selector {
+    width: 50%;
+    display: inline-block;
+    vertical-align: bottom;
+    > span {
+      font-size: 1rem;
+      color: #c5c5c5;
+    }
+    select {
+      padding-bottom: 10px;
+      font-size: 1.3rem;
+      border: none;
+      background: white;
+      border-bottom: 1px solid black;
+      height: 30px;
+      width: 45px;
+      padding-left: 10px;
+      margin-left: 10px;
+      -webkit-appearance: none;
+      -webkit-border-radius: 0px;
+      outline: none;
+    }
+  }
+  .room-number-selector {
+    span.arrow {
+      position: relative;
+      &:after, &:before {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 6px;
+        top: 4px;
+        background: #333333;
+        position: absolute;
+      }
+      &:after {
+        transform: rotate(45deg);
+        right: -47px;
+      }
+      &:before {
+        transform: rotate(-45deg);
+        right: -43px;
+      }
+    }
+  }
+
+  .input-checkbox {
+    display: none;
+    &:checked + .input-checkbox-label {
+      .btn-selected {
+        display: block;
+      }
+      .btn-to-selecte {
+        display: none;
+      }
+    }
+  }
+  .input-checkbox-label {
+    .btn-selected {
+      display: none;
+    }
+    .btn-to-selecte {
+      display: block;
+    }
+  }
+}

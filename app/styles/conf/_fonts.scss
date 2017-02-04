@@ -1,0 +1,51 @@
+$font-body: source sans pro;
+$font-headings: lora, Arial;
+// //////////////////////////////
+// LATO
+// //////////////////////////////
+
+@font-face{
+	font-family: "lora";
+  font-style: normal;
+  font-weight: normal;
+	src: url("../fonts/lora/Lora-Regular.ttf");
+}
+// BOLD
+@font-face{
+	font-family: "lora";
+	src: url("../fonts/lora/Lora-Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+
+// //////////////////////////////
+// Lustria
+// //////////////////////////////
+
+@font-face{
+	font-family: "source sans pro";
+  font-style: normal;
+  font-weight: normal;
+	src: url("../fonts/sourcesanspro/SourceSansPro-Regular.ttf");
+}
+
+@font-face{
+  font-family: "source sans pro";
+  font-style: normal;
+  font-weight: lighter;
+  src: url("../fonts/sourcesanspro/SourceSansPro-Light.ttf");
+}
+
+@font-face{
+  font-family: "source sans pro";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/sourcesanspro/SourceSansPro-Semibold.ttf");
+}
+
+@font-face{
+  font-family: "source sans pro";
+  font-style: normal;
+  font-weight: bolder;
+  src: url("../fonts/sourcesanspro/SourceSansPro-Bold.ttf");
+}

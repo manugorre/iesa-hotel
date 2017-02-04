@@ -1,0 +1,105 @@
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fbfbfb;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.13);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bg-grey{
+  background-color: rgb(238, 238, 238);
+}
+
+.f0{
+  font-size: 0px;
+}
+
+.nopadding {
+  padding: 0 !important;
+}
+
+.nomargin {
+  margin: 0 !important;
+}
+
+.height-zero {
+  height: 0;
+}
+
+.main-title {
+  font-family: $font-headings;
+  color: black;
+  font-size: 3.5rem;
+}
+
+.medium-title {
+  font-family: $font-headings;
+  color: black;
+  font-size: 2rem;
+}
+
+.margin-medium {
+  margin: 80px 0 40px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.box-shadow {
+  box-shadow: 0px 1px 2px 0px rgba(119, 119, 119, 0.53);
+}
+
+.btn-main {
+  border: 0;
+  border-radius: 2px;
+  background: #68b14d;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+  letter-spacing: 0.5px;
+  padding: 15px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  &:hover {
+    html.no-touch & {
+      box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.22);
+    }
+  }
+  &:active {
+    html.no-touch & {
+      box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.42);
+    }
+  }
+  &.checked {
+
+  }
+}
+
+.btn-grey {
+  border: 0;
+  border-radius: 2px;
+  background: #b2b5b1;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+  letter-spacing: 0.5px;
+  padding: 15px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  &:hover {
+    html.no-touch & {
+      box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.22);
+    }
+  }
+  &:active {
+    html.no-touch & {
+      box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.42);
+    }
+  }
+}

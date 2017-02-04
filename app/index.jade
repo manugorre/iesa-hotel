@@ -1,11 +1,18 @@
 extends layouts/default
 
 block content
-  .row
-    .col-lg-8.hero-unit
-      h2 'MAIN PAGE,
-      p You now have
-      ul
-        li HTML5 Boilerplate
-        li Sass
-        li Modernizr
+
+  include includes/header
+
+  main.row
+    .col-md-12
+      .row
+        .col-md-12.slider.nopadding
+          include includes/slider
+      .row
+        .col-md-12.height-zero.up-me
+          include includes/box-reservation
+      .row
+        .col-md-12
+
+  include includes/footer
