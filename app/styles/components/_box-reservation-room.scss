@@ -1,9 +1,6 @@
 .box-reservation-room {
   margin-bottom: 30px;
   @extend .f0;
-  > div {
-    background: white;
-  }
   .thumbnail {
     width: 200px;
     vertical-align: middle;
