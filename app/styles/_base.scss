@@ -20,6 +20,10 @@ ul {
   font-size: 0px;
 }
 
+.paddingBox {
+  padding: 40px 30px;
+}
+
 .nopadding {
   padding: 0 !important;
 }
@@ -54,6 +58,17 @@ ul {
 
 .box-shadow {
   box-shadow: 0px 1px 2px 0px rgba(119, 119, 119, 0.53);
+}
+
+.info-list {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  li {
+    color: #c5c5c5;
+    span {
+      color: black;
+    }
+  }
 }
 
 .btn-main {

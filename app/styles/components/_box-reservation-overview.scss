@@ -1,5 +1,106 @@
 .box-reservation-overview {
- .thumbnail {
+  > div {
+    @extend .paddingBox
+  }
+
+  .date-block {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .arrival-block, .departure-block {
+    display: inline-block;
+    p {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: darkgray;
+      .date {
+        color: black;
+      }
+    }
+  }
+
+  .arrival-block {
+    position: relative;
+    margin-right: 25px;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 1px;
+      height: 10px;
+      position: absolute;
+      background: darkgray;
+      right: -15px;
+      top: 50%;
+      margin-top: -5px;
+    }
+  }
+
+  .thumbnail {
    width: 100px;
- }
+    vertical-align: middle;
+  }
+
+  .room {
+    @extend .f0;
+    margin: 0 15px 20px 15px;
+    > div {
+      padding: 0 0 20px 0;
+      border-bottom: 1px solid #dadada;
+    }
+    .title {
+      font-size: 1.5rem;
+      margin: 0 0 9px 0;
+      font-family: $font-headings;
+    }
+  }
+
+  .price, .info-block {
+    width: calc(50% - 50px);
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .info-block {
+    padding-left: 20px;
+  }
+
+  .info-list {
+    margin: 0;
+  }
+
+  .price {
+    text-align: right;
+    .price-tag {
+      font-size: 1rem;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .price-value {
+      font-size: 1.7rem;
+    }
+  }
+
+  .total-block {
+    padding-top: 15px;
+    .total, .total-price {
+      display: inline-block;
+      width: 50%;
+      vertical-align: middle;
+    }
+    .total {
+      .price-tag {
+        display: block;
+        font-weight: bold;
+      }
+      .vat {
+        color: #a7a7a7;
+        font-size: 1.1rem;
+      }
+    }
+    .total-price {
+      font-size: 2.5rem;
+    }
+  }
 }
