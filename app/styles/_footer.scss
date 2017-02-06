@@ -1,14 +1,18 @@
 footer {
 	background: $grey-thunder;
 	color : $grey-silver;
-	padding : 50px 0;
+	padding : 50px 0 0px;
 	font-family: $font-body;
+	.footer-list-container{
+		padding-bottom: 50px
+	}
 	.footer-list{
 		margin-top: 0;
 		list-style : none;
 		padding : 0;
 		a {
 			color : $grey-silver;
+			text-decoration: none;
 			&:hover{
 				color : white;
 			}
@@ -17,6 +21,9 @@ footer {
 
 	.footer_form-newsletter{
 		border-bottom: 1px solid $grey-silver;
+		label{
+			color: white;
+		}
 		input{
 			width: 80%;
 			background: transparent;
@@ -35,6 +42,8 @@ footer {
 			background: transparent;
 			vertical-align: middle;
 			svg{
+				width : 20px;
+				width: 20px;
 				fill: $grey-silver;
 			}
 			&:hover{
@@ -48,5 +57,10 @@ footer {
 
 	.footerception{
 		border-top: 1px solid $grey-silver;
+		padding: 25px 0 25px;
+		&-brand{
+			color : white;
+			font-size: 22px;
+		}
 	}
 }
