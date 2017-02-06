@@ -2,15 +2,15 @@
 // endbower
 @import 'conf/fonts';
 
-@import 'bootstrap';
-@import 'normalize';
+@import 'vendor/bootstrap';
+@import 'vendor/normalize';
 
 @import 'base';
-@import 'md';
+@import 'vendor/md';
 
 @import 'heade';
 
-@import 'slider';
+@import 'components/slider';
 @import 'components/box-reservation';
 @import 'components/box-reservation-room';
 @import 'components/box-reservation-form';
