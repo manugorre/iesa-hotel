@@ -16,6 +16,22 @@ ul {
   background-color: rgb(238, 238, 238);
 }
 
+.bg-motif {
+  position: relative;
+}
+
+.bg-motif::after {
+  content: "";
+  background-image: url(../images/motif.png);
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+}
+
 .f0{
   font-size: 0px;
 }
