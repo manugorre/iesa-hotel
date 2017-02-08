@@ -1,9 +1,19 @@
 .box-cover
-  .slider
-    img(src="./images/slider0.jpg" alt="Image de la chambre")
-    img(src="./images/slider1.jpg" alt="Image de la chambre")
-    img(src="./images/slider2.jpg" alt="Image de la chambre")
-  .block-info
-    .pre-title About us
-    .main-title.c-white Mona Lisa
+  - if (cover.slider)
+    .slider
+      each slider in cover.slider
+        img(src=slider.src alt=slider.alt)
 
+  .block-info
+    span.title-spacing.pre-title #{cover.preTitle}
+    h3.main-title.c-white #{cover.title}
+    - if (cover.description)
+      .key-sentence #{cover.description}
+    - if (cover.ariane)
+      ul.box-ariane
+        each ariane in cover.ariane
+          li.link
+            a(href=ariane.href) #{ariane.name}
+          li.link
+            a(href=ariane.href) #{ariane.name}
+          li #{ariane.name}

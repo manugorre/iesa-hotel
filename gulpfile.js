@@ -1,5 +1,6 @@
 // generated on 2017-01-27 using generator-webapp 2.3.2
 const gulp = require('gulp');
+const data = require('gulp-data');
 const gulpLoadPlugins = require('gulp-load-plugins');
 const browserSync = require('browser-sync').create();
 const del = require('del');
@@ -7,14 +8,21 @@ const wiredep = require('wiredep').stream;
 const runSequence = require('run-sequence');
 const concat = require('gulp-concat');
 const w3cjs = require('gulp-w3cjs');
+const fs = require("fs");
+const path = require("path");
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
-var dev = false;
+var dev = true;
 
 gulp.task('views', function () {
   return gulp.src('app/*.jade')
+    .pipe(data( function(file) {
+      return JSON.parse(
+        fs.readFileSync('./data/' + path.basename(file.path, '.jade') + '.json')
+      );
+    }))
     .pipe($.jade({pretty: true}))
     .pipe(gulp.dest('.tmp'))
     .pipe(reload({stream: true}));
@@ -122,6 +130,7 @@ gulp.task('serve', () => {
     ]).on('change', reload);
 
     gulp.watch('app/**/*.jade', ['views']);
+    gulp.watch('data/**/*.json', ['views']);
     gulp.watch('app/styles/**/*.scss', ['styles']);
     gulp.watch('app/scripts/**/*.js', ['scripts']);
     gulp.watch('app/fonts/**/*', ['fonts']);
