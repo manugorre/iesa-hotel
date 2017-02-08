@@ -28,8 +28,8 @@ html.no-js(lang='')
       //  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       //ga('create', 'UA-91045877-1', 'auto');
       //ga('send', 'pageview');
-    script(src='https://code.getmdl.io/1.3.0/material.min.js')
     // build:js scripts/vendor.js
+    script(src='https://code.getmdl.io/1.3.0/material.min.js')
     // bower:js
     script(src='/bower_components/jquery/dist/jquery.slim.min.js')
     script(src='/bower_components/slick-carousel/slick/slick.min.js')
@@ -40,4 +40,6 @@ html.no-js(lang='')
     script(src='scripts/main.js')
     script(src='scripts/slider.js')
     script(src='scripts/box-reservation.js')
+    script(src='scripts/ggmap.js')
+    script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2hiBLlHWPtnBxnb96IDk1xg7PBfkGzAc&callback=initMap")
     // endbuild

@@ -27,6 +27,7 @@
         that.setNumberGuest(selectedIndex);
       });
 
+
     },
 
     setNumberGuest: function(selectedIndex) {
