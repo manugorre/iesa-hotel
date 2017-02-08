@@ -7,15 +7,18 @@ let Map = function($root) {
 Map.prototype =  {
 
   map: null,
+  _map: document.getElementById('map'),
 
   init: function() {
-    this.initMap();
+    if (this._map != null) {
+      this.initMap();
+    }
   },
 
   initMap: function() {
     let that = this;
 
-    this.map = new google.maps.Map(document.getElementById('map'), {
+    this.map = new google.maps.Map( that._map, {
       center: {lat: 48.8773803, lng: 2.3286603},
       zoom: 14,
       disableDefaultUI: true,

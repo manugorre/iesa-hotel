@@ -1,0 +1,37 @@
+.room-space {
+  margin-bottom: 80px;
+
+  .room-list {
+    padding: 70px 70px 0 70px;
+  }
+
+  .room {
+    padding: 5px;
+    a {
+      display: block;
+      -webkit-transition: all 0.2s ease-in-out;
+      &:hover {
+        text-decoration: none;
+        html.no-touch & {
+          background: #f7f7f7;
+        }
+      }
+    }
+    .medium-title {
+      display: inline-block;
+      margin: 0;
+      vertical-align: top;
+    }
+    img.thumbnail {
+      width: 100px;
+      margin-right: 10px;
+    }
+  }
+
+  .scroll {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 70px;
+  }
+}

@@ -1,7 +1,6 @@
 {
   "cover": {
-    "preTitle": "A propos de nous",
-    "title": "Parimis Hotel",
+    "title": "Nos Chambres",
     "slider": [
       {"src": "./images/slider0.jpg", "alt": "slider 1"},
       {"src": "./images/slider1.jpg", "alt": "slider 2"},
@@ -9,8 +8,8 @@
     ]
   },
   "room-picture" : {
-    
+
       "src": "./images/slider0.jpg", "alt": "room-picture 1"
-    
+
   }
 }
