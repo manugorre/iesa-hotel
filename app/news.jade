@@ -1,0 +1,15 @@
+extends layouts/default
+
+block content
+
+  include includes/header
+
+  .row.news-container
+    article.col-md-8.col-md-offset-2.news-item
+      a(href="#")
+        h2.news-item-title Lazy is the new Sexy
+        img(src="http://lorempixel.com/output/food-q-c-1200-800-2.jpg", alt="Article image")
+        .news-item-excerpt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur soluta odio rerum dolorem quia molestias architecto in, illo obcaecati autem.
+        .news-item-link Continuer à lire l'article
+        .news-item-comment 12 comments
+  include includes/footer

@@ -1,0 +1,27 @@
+.news{
+	&-container{
+
+	}
+
+	&-item{
+		cursor : pointer;
+		padding: 25px;
+		border : 1px solid rgba(0,0,0,.1);
+		border-radius: 5px;
+		box-shadow: 0 1px 4px rgba(0,0,0,.04);
+		& a:hover{
+			text-decoration: none;
+		}
+	}
+	&-item-title{
+		color : darken(grey, 25);
+		font-family: $font-headings;
+		font-size: 2.2rem;
+	}
+	&-item-excerpt{
+		color : darken(grey, 25);
+		font-family: $font-body;
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+}
