@@ -1,0 +1,54 @@
+extends layouts/default
+
+block content
+
+  include includes/header
+
+  main.row.room-container.bg-grey
+    .col-md-12
+      .row
+        .col-md-12.nopadding
+          include includes/box-cover
+      .row
+        .col-md-12.height-zero.up-me
+          include includes/box-reservation
+      .row
+        .col-md-12.room-list-container.bg-white
+          .row
+            .col-md-12.room-list-item
+              .row
+                .col-md-6.room-item-img.nopadding
+                  img(src="./images/chambre.jpg", alt="")
+                .col-md-6.room-item-description-container.nopadding
+                  h3.room-item-title Chambre Classique
+          .row
+            .col-md-12.room-list-item
+              .row
+                .col-md-6.col-md-push-6.room-item-img.nopadding
+                  img(src="./images/chambre.jpg", alt="")
+                .col-md-6.col-md-pull-6.room-item-description-container.nopadding
+                  h3.room-item-title Chambre Confort
+          .row
+            .col-md-12.room-list-item
+              .row
+                .col-md-6.room-item-img.nopadding
+                  img(src="./images/chambre.jpg", alt="")
+                .col-md-6.room-item-description-container.nopadding
+                  h3.room-item-title Chambre Luxe
+          .row
+            .col-md-12.room-list-item
+              .row
+                .col-md-6.col-md-push-6.room-item-img.nopadding
+                  img(src="./images/chambre.jpg", alt="")
+                .col-md-6.col-md-pull-6.room-item-description-container.nopadding
+                  h3.room-item-title Suite
+
+
+
+
+      .row
+        .col-md-12.bg-motif
+          include includes/box-review
+
+
+  include includes/footer
