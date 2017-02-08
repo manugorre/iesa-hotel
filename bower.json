@@ -3,7 +3,8 @@
   "private": true,
   "dependencies": {
     "modernizr": "~2.8.1",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.6.0",
+    "jquery-ui": "^1.12.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
