@@ -1,0 +1,83 @@
+extends layouts/default
+
+block content
+
+  include includes/header
+
+  main.row.room-container.bg-grey
+    .col-md-12
+      .row
+        .col-md-12.nopadding
+          include includes/box-cover
+      .row
+        .col-md-12.height-zero.up-me
+          include includes/box-reservation
+      .row
+        .col-md-12.room-list-container.bg-white
+          .row
+            .col-md-12.room-list-item
+              .row
+                .col-md-6.room-item-img.nopadding
+                  img(src="./images/soin_1.jpg", alt="")
+                .col-md-6.room-item-description-container.nopadding
+                  .eazy-padding
+                    h3.room-item-title Soins détente
+                    .room-item-description Sur mesure pour les personnes souhaitant découvrir en douceur et s’initier aux techniques de relaxation alternatives, le soin détente se précède d’un bilan énergétique et spirituel. Le docteur en charge de votre personne prendra alors soin d’orienter, à travers la lithothérapie et les vertues particulières de chaque pierre, le massage aux pierres chaudes qui s’ensuivra d’un modelage complet du visage et du corps pour une détente totale.
+                    br
+                    a(href="soin.html").room-item-link Voir détails →
+          .row
+            .col-md-12.room-list-item
+              .row
+                .col-md-6.col-md-push-6.room-item-img.nopadding
+                  img(src="./images/soin_2.jpg", alt="")
+                .col-md-6.col-md-pull-6.room-item-description-container.nopadding
+                  .eazy-padding
+                    h3.room-item-title Soin découverte
+                    .room-item-description À la découverte des véritables vertues des massages traditionnels, ce soin se dédie à une approche tonique et non à un objectif de détente. Précédé d’un bilan énergétique complet, la séance débute avec le massage ventouse pour évacuer grâce au vecteur chaleur apporté par la flamme utilisée, les énergies négatives et différentes tensions stockées en dans les couches supérieures de votre corps. Le massage traditionnel chinois ou Tui Na, deuxième étape de ce soin, est une technique proche de l'acupuncture. Dans cette partie du soin détente, la libération des tensions énergétiques se fait plus en profondeur et le rééquilibrage commence. Pour la dernière partie du soin, un chiropracteur vous prend en charge et se charge de la délivrance de vos maux récurrents et parfait le rééquilibrage énergétique. Votre corps est sain votre esprit est apaisé. 
+                    br
+                    a(href="soin.html").room-item-link Voir détails →
+          .row
+            .col-md-12.room-list-item
+              .row
+                .col-md-6.room-item-img.nopadding
+                  img(src="./images/soin_5.jpg", alt="")
+                .col-md-6.room-item-description-container.nopadding
+                  .eazy-padding
+                    h3.room-item-title Soin relaxant
+                    .room-item-description Dédié aux personnes menant une vie particulièrement stressante, ce soin a pour objectif de vous permettre de relâcher la pression non évacuée lors de chacune de vos périodes de stress intense, aussi appelées pic de stress. Précédée d’un bilan physiologique et physique complet, le soin commence par un massage Reiki tout à fait adapté pour réguler les émotions et surtout pour rééquilibrer les différentes énergies du corps. Cette pratique a par ailleurs des vertues exceptionnelles pour la dissipations de diverses maladies de peau, et autres tensions musculaires et osseuses récurrentes. 
+                    br 
+                    | Dans le seconde partie du soin, le massage lomi lomi du temple hawaïen viendra, grâce à son approche chamanique ancestrale et exceptionnelle, vous apporter un relâchement profond de tensions anciennes et des blocages tenaces, dans le but de restaurer un état général de bien-être ainsi que le bon fonctionnement des ressources naturelles de guérison du corps. Votre être est comme renouvelé, libre et vierge de toute force négative ou bloquante. Vous êtes habités par le sentiment d’unité en vous et en le monde, d’équilibre et d’harmonie qui fait naître une inspiration et des forces neuves.
+                    
+                    br
+                    a(href="soin.html").room-item-link Voir détails →
+          .row
+            .col-md-12.room-list-item
+              .row
+                .col-md-6.col-md-push-6.room-item-img.nopadding
+                  img(src="./images/soin_3.jpg", alt="")
+                .col-md-6.col-md-pull-6.room-item-description-container.nopadding
+                  .eazy-padding
+                    h3.room-item-title Soin plaisir
+                    .room-item-description (à la découverte du point digital) (Testé et approuvé par bastien chemasle)Essentiellement dédié au couple, le massage tantrique utilise l’énergie du troisième chakras comme énergie vitale et se sert de son pouvoir pour rééquilibrer les six autres. Energie d’amour, le massage tantrique de parimis hôtel s’accompagne d’une approche de musicothérapie pour parfaire le voyage spirituel et énergétique qui s’achemine. Pour les personnes seules, une formule spéciale peut-être sélectionnée. Seule la fin du massage est changée. En effet, sous les mains expertes de nos spécialistes, vous pourrez vivre la célèbre finition thaïlandaise. Vous choisirez par la suite de retenir ou non votre fluide énergétique vital et partirez si vous le souhaitez, à la découverte du point digital. 
+                    br
+                    a(href="soin.html").room-item-link Voir détails →
+          .row
+            .col-md-12.room-list-item
+              .row
+                .col-md-6.room-item-img.nopadding
+                  img(src="./images/soin_4.jpg", alt="")
+                .col-md-6.room-item-description-container.nopadding
+                  .eazy-padding
+                    h3.room-item-title Soins évasion
+                    .room-item-description Destiné à ceux qui ressentent un besoin profond de lâcher prise, le soin évasion se compose de deux techniques de massage. Dans un premier temps, place au massage Shiatsu et à ses pressions libératrices afin de libérer votre âme. Le massage métaphorique vient parfaire la première technique. Il s’agit d’un toucher léger sur les pieds, les mains, la tête, ainsi que sur les corps énergétiques, considérant que ces zones sont le reflet d’une mémoire : celle de l’évolution pendant notre gestation, tout à la fois corporelle et de conscience de l’embryon et du foetus
+
+                    br
+                    a(href="soin.html").room-item-link Voir détails →
+
+
+      .row
+        .col-md-12.bg-motif
+          include includes/box-review
+
+
+  include includes/footer
