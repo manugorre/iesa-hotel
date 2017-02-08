@@ -1,0 +1,12 @@
+{
+  "cover": {
+    "preTitle": "Bienvenue",
+    "title": "Parimis Hotel",
+    "description": "Coucou tu veux",
+    "slider": [
+      {"src": "./images/slider0.jpg", "alt": "slider 1"},
+      {"src": "./images/slider1.jpg", "alt": "slider 2"},
+      {"src": "./images/slider2.jpg", "alt": "slider 3"}
+    ]
+  }
+}

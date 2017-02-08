@@ -1,3 +1,81 @@
 footer {
+	background: $grey-thunder;
+	color : $grey-silver;
+	padding : 50px 0 0px;
+	font-family: $font-body;
+	.footer-list-container{
+		padding-bottom: 50px
+	}
+	.footer-list{
+		margin-top: 0;
+		@media (max-width: 768px){
+			margin-bottom: 25px;
+		}
+		list-style : none;
+		padding : 0;
+		a {
+			color : $grey-silver;
+			text-decoration: none;
+			&:hover{
+				color : white;
+			}
+		}
+	}
 
+	@media (max-width: 768px) and (orientation : landscape){
+
+		.footer_form-container{
+			display: block;
+			width : 55%;
+
+			margin-left : 25%;
+		}
+	}
+
+	.footer_form-newsletter{
+		border-bottom: 1px solid $grey-silver;
+		label{
+			color: white;
+		}
+		input{
+			width: 80%;
+			background: transparent;
+			padding: 10px 0;
+			border: none;
+			font-size: 1.2rem;
+			font-family: $font-body;
+			&:focus{
+				outline: none;
+			}
+		}
+		button{
+			display: inline-block;
+			width:18%;
+			border: none;
+			background: transparent;
+			vertical-align: middle;
+			svg{
+				width : 20px;
+				width: 20px;
+				fill: $grey-silver;
+			}
+			&:hover{
+				svg {
+					fill : white;
+				}
+			}
+		}
+
+	}
+
+	.footerception{
+		border-top: 1px solid $grey-silver;
+		padding: 25px 0 25px;
+		&-brand{
+			color : white;
+			font-size: 22px;
+			font-family: $font-headings;
+			font-weight: bold;
+		}
+	}
 }
