@@ -16,7 +16,6 @@
     },
 
     initSlider: function() {
-      console.log(this._slider);
       $('.slider').slick({
         autoplay: true,
         autoplaySpeed: 4000,

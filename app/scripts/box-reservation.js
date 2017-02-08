@@ -22,7 +22,7 @@
     listenSelect: function () {
       let that = this;
 
-      this._select.addEventListener("change", function(data) {
+      this._select.addEventListener('change', function(data) {
         let selectedIndex = data.target.selectedIndex;
         that.setNumberGuest(selectedIndex);
       });
