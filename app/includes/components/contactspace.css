@@ -1,0 +1,37 @@
+.contact-container{
+  width: 480;
+  height: 320;
+  background: white;
+  position: fixed;
+}
+
+.map{
+width: 60%;
+height: 100%
+float:left;
+position: absolute;
+}
+
+.contact-card{
+width: 40%;
+height: 100%;
+float: right;
+position: absolute;
+font: ../fonts/Lato-Bold.ttf;
+}
+
+.contact-us{
+font-size: 22px;
+}
+
+.nom{
+font-size: 14px;
+}
+
+.adresse, .email, .call-directly {
+font-size: 8px;
+}
+
+.number{
+font-size: 16;
+}
