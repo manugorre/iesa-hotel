@@ -1,0 +1,50 @@
+.about-page {
+  &:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 1px;
+    height: 80px;
+    background: #b1b1b1;
+    top: -45px;
+  }
+  .since {
+    margin: 0 0 50px 0;
+    font-size: 3rem;
+    font-family: $font-headings;
+  }
+
+  .description {
+    color: darkgray;
+    text-align: justify;
+    text-align-last: center;
+    margin: 35px 0;
+    line-height: 22px;
+    font-size: 1.2rem;
+  }
+
+  .facts-title {
+    font-weight: bold;
+    margin: 35px 0;
+    font-size: 1.2rem;
+  }
+
+  .key-number {
+    margin-bottom: 50px;
+    li {
+      display: inline-block;
+      font-size: 5rem;
+      font-weight: bold;
+      font-family: $font-headings;
+      &:nth-child(n + 2) {
+        margin-left: 50px;
+      }
+      span {
+        display: block;
+        color: gray;
+        font-size: 1.1rem;
+        font-family: $font-body;
+      }
+    }
+  }
+}

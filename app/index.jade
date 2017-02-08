@@ -5,12 +5,17 @@ block content
   include includes/header
 
   main.row
-    .card-container.col-sm-8
-      include includes/components/littlecard
-    
-      include includes/components/littlecard
-    
-      include includes/components/littlecard
-        
-  
+    .col-md-12.bg-motif
+      .row
+        .col-md-12.nopadding
+          include includes/box-cover
+      .row
+        .col-md-12.height-zero.up-me
+          include includes/box-reservation
+      .row
+        .col-md-12
+          span.title-spacing.text-center exploré
+          h3.main-title.text-center Latest from our blog
+          include includes/box-cards
+
   include includes/footer
