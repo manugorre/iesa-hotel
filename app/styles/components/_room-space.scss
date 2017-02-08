@@ -7,6 +7,21 @@
 
   .room {
     padding: 5px;
+    figure {
+      margin: 0;
+      vertical-align: top;
+      @extend .f0;
+      figcaption {
+        padding-left: 10px;
+        .starting-from {
+          font-size: 1.3rem;
+          margin: 0;
+        }
+      }
+    }
+    img {
+      vertical-align: top;
+    }
     a {
       display: block;
       -webkit-transition: all 0.2s ease-in-out;
@@ -24,7 +39,10 @@
     }
     img.thumbnail {
       width: 100px;
-      margin-right: 10px;
+    }
+    figcaption {
+      width: calc(100% - 100px);
+      display: inline-block;
     }
   }
 
