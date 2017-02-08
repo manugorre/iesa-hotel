@@ -1,0 +1,50 @@
+.box-cover {
+  position: relative;
+  text-align: center;
+
+  .slider{
+    img {
+      width: 100%;
+    }
+  }
+
+  .block-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    color: white;
+  }
+
+  .pre-title {
+    color: white;
+  }
+
+  .main-title {
+    color: white;
+    font-size: 5rem;
+  }
+
+  .key-sentence {
+    font-size: 1.2rem;
+  }
+
+  .box-ariane {
+
+    li {
+      color: white;
+      &:after, &:before {
+        background: white;
+      }
+      &.link a {
+        color: white;
+        &:hover {
+          html.no-touch & {
+            opacity: 0.8;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

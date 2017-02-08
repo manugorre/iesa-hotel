@@ -1,0 +1,164 @@
+extends layouts/default
+
+block content
+
+  include includes/header
+
+  main.row
+    .col-md-12.bg-grey
+      .row
+        .col-md-12
+          h2.main-title.text-center.margin-medium Reservation
+          ul.box-ariane
+            li.link
+              a(href="#") Home
+            li.link
+              a(href="#") Home
+            li Reservation
+      .row
+        .col-md-12
+          h3.medium-title.text-center.margin-medium Make your reservation
+          include includes/box-reservation
+      .row
+        .col-md-12
+          h3.medium-title.text-center.margin-medium Rooms available for you
+          .row.box-reservation-room
+            .col-md-8.col-md-offset-2.nopadding.bg-white.box-shadow
+              img(src="images/chambre.jpg" alt="Image de la chambre").thumbnail
+              .box-reservation-info
+                .col-sm-6
+                  h4.title Classic Room
+                  ul.info-list
+                    li Beds:
+                      span  02
+                    li Passenger:
+                      span  04
+                .col-sm-6
+                  .price-container
+                    div.price 450€
+                      span.by-night / Night
+                  .room-number-selector
+                    span.arrow Rooms
+                    select
+                      option 01
+                      option 02
+                  .room-selector-container
+                    input(type="checkbox" id="id4").input-checkbox
+                    label(for="id4").input-checkbox-label
+                      span.btn-to-selecte.btn-grey.text-center  Choisir
+                      span.btn-selected.btn-main.text-center.checked Séléctionné
+
+          .row.box-reservation-room.selected
+            .col-md-8.col-md-offset-2.nopadding.bg-white.box-shadow
+              img(src="images/chambre.jpg" alt="Image de la chambre").thumbnail
+              .box-reservation-info
+                .col-sm-6
+                  h4.title Classic Room
+                  ul.info-list
+                    li Bed:
+                      span  02
+                    li Passenger:
+                      span  04
+                .col-sm-6
+                  .price-container
+                    div.price 450€
+                      span.by-night / Night
+                  .room-number-selector
+                    span.arrow Rooms
+                    select
+                      option 01
+                      option 02
+                  .room-selector-container
+                    input(type="checkbox" id="id42" checked).input-checkbox
+                    label(for="id42").input-checkbox-label
+                      span.btn-to-selecte.btn-grey.text-center  Choisir
+                      span.btn-selected.btn-main.text-center.checked Séléctionné
+      .row
+        .col-md-12
+          h3.medium-title.text-center.margin-medium Your booking overview
+          .row.box-reservation-overview
+            .col-md-8.col-md-offset-2.bg-white.box-shadow
+              .row.date-block
+                .col-md-12
+                  .arrival-block
+                    p Date d'arriver :
+                      span.date  27 juin 2017
+                  .departure-block
+                    p Date de départ :
+                      span.date  27 juin 2018
+              .row.room
+                .col-md-12
+                  img.thumbnail(src="images/chambre.jpg" alt="Image de la chambre")
+                  .info-block
+                    h4.title Classic Room
+                    ul.info-list
+                      li Bed:
+                        span  02
+                      li Passenger:
+                        span  04
+                  .price
+                    span.price-tag Prix
+                    span.price-value 45 €
+              .row.room
+                .col-md-12
+                  img.thumbnail(src="images/chambre.jpg" alt="Image de la chambre")
+                  .info-block
+                    h4.title Classic Room With Two Beds
+                    ul.info-list
+                      li Bed:
+                        span  02
+                      li Passenger:
+                        span  04
+                  .price
+                    span.price-tag Prix
+                    span.price-value 45 €
+              .row.total-block
+                .col-md-4.col-md-offset-8
+                  .total
+                    span.price-tag Prix total
+                    span.vat (TVA 20% incluse)
+                  span.total-price 90 €
+
+      .row
+        .col-md-12
+          h3.medium-title.text-center.margin-medium Confirm your reservation
+          .row.box-reservation-form
+            form(action='#').col-md-8.col-md-offset-2.bg-white.box-shadow
+              .row.nomargin
+                .col-md-4
+                  .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                    input#sample1.mdl-textfield__input(type='text')
+                    label.mdl-textfield__label(for='sample1') Prénom
+                .col-md-4
+                  .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                    input#sample2.mdl-textfield__input(type='text')
+                    label.mdl-textfield__label(for='sample2') Nom
+                .col-md-4
+                  .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                    input#sample3.mdl-textfield__input(type='text', pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$')
+                    label.mdl-textfield__label(for='sample3') Adresse Email
+                    span.mdl-textfield__error Ce n'est pas un email bro
+              .row.nomargin
+                .col-md-4
+                  .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                    input#sample4.mdl-textfield__input(type='text', pattern='[0-9]*')
+                    label.mdl-textfield__label(for='sample4') Numero de téléphone
+                    span.mdl-textfield__error Ce n'est pas un numéro de téléphone
+                .col-md-4
+                  .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                    input#sample5.mdl-textfield__input(type='text')
+                    label.mdl-textfield__label(for='sample5') Pays
+                .col-md-4
+                  .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                    input#sample6.mdl-textfield__input(type='text')
+                    label.mdl-textfield__label(for='sample6') Code postal
+              .row.nomargin
+                .col-md-12
+                  .mdl-textfield.mdl-textfield--full-width.mdl-js-textfield
+                    textarea#sample7.mdl-textfield__input(rows='5')
+                    label.mdl-textfield__label(for='sample7') Notes de reservation
+              .row
+                .col-md-12.text-center
+                  button.btn-main Confirmer
+
+  include includes/footer

@@ -1,0 +1,59 @@
+.box-cards {
+  padding: 40px 0 100px 0;
+  figure {
+    margin: 0;
+  }
+  figcaption {
+    padding: 20px;
+  }
+  @extend .f0;
+  .box-shadow {
+    -webkit-transition: all 0.2s ease-in-out;
+    &:hover {
+      html.no-touch & {
+        box-shadow: 0px 0px 20px 0px rgba(119, 119, 119, 0.29);
+      }
+    }
+  }
+  .card {
+    > div {
+      margin-bottom: 30px;
+    }
+    &-image{
+      width : 100%;
+    }
+    &-date{
+      font-size: 1rem;
+      color: darkgray;
+      margin: 10px 0 20px 0;
+      font-family: $font-body;
+    }
+    &-title{
+      font-size: 1.4rem;
+      color: black;
+      font-family: $font-headings;
+      -webkit-transition: all 0.2s ease-in-out;
+    }
+    &-link{
+      font-size: 1rem;
+      color: darkgray;
+      font-family: $font-body;
+      font-weight: 600;
+      -webkit-transition: all 0.2s ease-in-out;
+    }
+  }
+  a:hover {
+    text-decoration: none;
+    html.no-touch & {
+      .card {
+        &-title{
+          text-decoration: underline;
+        }
+        &-link{
+          font-size: 1rem;
+          color: black;
+        }
+      }
+    }
+  }
+}
