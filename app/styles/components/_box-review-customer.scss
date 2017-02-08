@@ -1,0 +1,14 @@
+.customer{
+  &-review{
+    font-size: 1.3rem;
+  }
+  &-review-container{
+    &:not(:last-child){
+      margin-bottom: 25px;
+    }
+  }
+  &-review-date{
+    font-size: 1.1rem;
+    float : right;
+  }
+}

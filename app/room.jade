@@ -1,0 +1,60 @@
+extends layouts/default
+
+block content
+
+  include includes/header
+
+  main.row.room-container.bg-grey
+    .col-md-12
+      .row
+        .col-md-12.nopadding
+          include includes/box-cover
+      .row
+        .col-md-12.height-zero.up-me
+          include includes/box-reservation
+      .row
+        .col-md-8.col-md-offset-2
+          img(src="./images/chambre.jpg", alt="").room-picture
+      .row
+        .col-md-2.col-md-offset-5.room-price
+          | A partir de 
+          span.price-tag 39€ 
+          span.dark / nuit
+          br
+          | Place : 
+          span.dark 2
+      .row
+        .col-md-12.room-description-container
+          .row
+            .col-md-6.col-md-offset-3.text-center.room-description
+              h3.since  Description
+              p.description Au coeur de Paris, se trouve un lieu hors du temps, dédié au corps et à l’esprit, où chacun vient recharger ses batteries énergétiques et soulager son âme Niché au sein de la plus belle ville du monde, Parimis hotel est un lieu à la fois exotique et singulier, où sont pratiquées les médecines ancestrales et alternatives du monde entier. Véritable syncrétisme culturel et spirituel, ce lieu au charme extrême ne cesse de tenir sa promesse auprès de ses clients : restructurer, équilibrer et unifier le corps et l’âme.
+
+      .row
+        .col-md-12
+          h3.medium-title.text-center.margin-medium Avis
+          .row.box-reservation-room
+            .col-md-8.col-md-offset-2.nopadding.bg-white.box-shadow.customer-review-container
+              img(src="images/customer_1.jpg" alt="Image de la chambre").thumbnail
+              .box-reservation-info
+                .col-sm-12
+                  h4.title Bernard Lowe
+                  div.customer-review Excellent service, avec une chambre très bien entretenu. Le personnel est très sympathique. Je recommande fortement !
+                  .customer-review-date 14/05/2142
+          .row.box-reservation-room
+            .col-md-8.col-md-offset-2.nopadding.bg-white.box-shadow.customer-review-container
+              img(src="images/customer_2.jpg" alt="Image de la chambre").thumbnail
+              .box-reservation-info
+                .col-sm-12
+                  h4.title Robert Ford
+                  div.customer-review Malgré un court séjour à l'hotel, l'établissement tient ses promesses. On se sent reposé et transporté dans un tout autre univers ! Je valide les potos 92i.
+                  .customer-review-date 14/05/1980
+
+
+
+      .row
+        .col-md-12.bg-motif
+          include includes/box-review
+
+
+  include includes/footer
