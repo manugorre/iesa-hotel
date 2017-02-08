@@ -1,4 +1,5 @@
 // bower:scss
+@import "bower_components/slick-carousel/slick/slick.scss";
 // endbower
 @import 'conf/fonts';
 
@@ -10,7 +11,7 @@
 
 @import 'heade';
 
-@import 'components/slider';
+@import 'components/box-slider';
 @import 'components/box-reservation';
 @import 'components/box-reservation-room';
 @import 'components/box-reservation-overview';

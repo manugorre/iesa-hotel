@@ -9,6 +9,10 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+.slider {
+  max-height: calc(100vh - 77px);
+}
 .bg-white {
   background: white;
 }
@@ -30,6 +34,26 @@ ul {
   right: 0;
   z-index: -1;
   position: absolute;
+}
+
+.stars-review {
+  li {
+    display: inline-block;
+    &:after {
+      content: '';
+      background-image: url(../images/ic_star_rate_black.png);
+      -webkit-background-size: cover;
+      background-size: cover;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+    }
+    &.active {
+      &:after {
+        background-image: url(../images/ic_star_rate_black_active.png);
+      }
+    }
+  }
 }
 
 .f0{

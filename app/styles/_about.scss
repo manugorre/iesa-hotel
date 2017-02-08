@@ -19,18 +19,21 @@
     text-align: justify;
     text-align-last: center;
     margin: 35px 0;
+    line-height: 22px;
+    font-size: 1.2rem;
   }
 
   .facts-title {
     font-weight: bold;
     margin: 35px 0;
+    font-size: 1.2rem;
   }
 
   .key-number {
     margin-bottom: 50px;
     li {
       display: inline-block;
-      font-size: 3.5rem;
+      font-size: 5rem;
       font-weight: bold;
       font-family: $font-headings;
       &:nth-child(n + 2) {

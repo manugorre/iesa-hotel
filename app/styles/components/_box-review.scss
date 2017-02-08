@@ -1,3 +1,58 @@
 .box-review {
+  text-align: center;
+  padding: 120px 0;
+  > div {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .testimonial {
+    display: block;
+    letter-spacing: 5px;
+    font-size: 1rem;
+    color: darkgray;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .client-sayed {
+    font-family: $font-headings;
+    font-size: 4rem;
+    margin-bottom: 40px;
+    display: block;
+  }
+  .stars-review {
+    margin-bottom: 40px;
+  }
+  blockquote {
+    margin-bottom: 25px;
+    font-style: italic;
+    color: #6f6f6f;
+    &:before, &:after {
 
+    }
+
+    &:before {
+      content: '“ ';
+    }
+
+    &:after {
+      content: ' ”';
+    }
+  }
+  .logo-site-review {
+    width: 90px;
+    margin-bottom: 20px;
+  }
+  .cite-review {
+    font-size: 1.2rem;
+    .user-link {
+      font-weight: bold;
+      color: black;
+    }
+    .review-from {
+      color: darkgray;
+    }
+    .review-site-link {
+      color: black;
+    }
+  }
 }
