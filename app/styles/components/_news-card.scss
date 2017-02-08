@@ -6,15 +6,18 @@
 	&-item{
 		cursor : pointer;
 		padding: 25px;
-		border : 1px solid rgba(0,0,0,.1);
-		border-radius: 5px;
-		box-shadow: 0 1px 4px rgba(0,0,0,.04);
+		box-shadow: 0px 1px 2px 0px rgba(119, 119, 119, 0.53);
 		font-family: $font-body;
+		 background:white;
 		&:not(:last-child){
 			margin-bottom: 25px;
 		}
 		& a:hover{
 			text-decoration: none;
+			// box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 1);
+			&-item-title{
+				text-decoration: none;
+			}
 		}
 		figure{
 				width: 100%;
@@ -32,13 +35,14 @@
 
 	}
 	&-item-title{
-		color : darken(grey, 25);
-		font-family: $font-body;
+		color : #333;
+		font-family: $font-headings;
 		font-size: 2.6rem;
+		text-decoration: none;
 	}
 	&-item-excerpt{
 		padding: 25px 0;
-		color : darken(grey, 25);
+		color : #aaaaaa;
 		font-family: $font-body;
 		font-size: 1.6rem;
 		font-weight: 600;
@@ -46,9 +50,9 @@
 	&-item-link, &-item-comment{
 		font-size: 1.2rem;
 		display: inline-block;
-		color : lighten(grey, 15);
+		color : darken(grey, 25);
 		&:hover{
-			color : darken(grey, 25);
+			color : lighten(grey, 15);
 		}
 	}
 	&-item-comment{
