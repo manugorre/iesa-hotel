@@ -1,6 +1,6 @@
 .news{
 	&-container{
-
+		padding: 25px 0;
 	}
 
 	&-item{
@@ -9,19 +9,50 @@
 		border : 1px solid rgba(0,0,0,.1);
 		border-radius: 5px;
 		box-shadow: 0 1px 4px rgba(0,0,0,.04);
+		font-family: $font-body;
+		&:not(:last-child){
+			margin-bottom: 25px;
+		}
 		& a:hover{
 			text-decoration: none;
 		}
+		figure{
+				width: 100%;
+				height: 0;
+				padding-bottom: 30.25%;
+				overflow: hidden;
+				margin: 0;			
+			img {
+				display: block;
+				max-width: 100%;
+				margin: 0 auto;
+				overflow: hidden;
+			}
+		}
+
 	}
 	&-item-title{
 		color : darken(grey, 25);
-		font-family: $font-headings;
-		font-size: 2.2rem;
+		font-family: $font-body;
+		font-size: 2.6rem;
 	}
 	&-item-excerpt{
+		padding: 25px 0;
 		color : darken(grey, 25);
 		font-family: $font-body;
 		font-size: 1.6rem;
 		font-weight: 600;
+	}
+	&-item-link, &-item-comment{
+		font-size: 1.2rem;
+		display: inline-block;
+		color : lighten(grey, 15);
+		&:hover{
+			color : darken(grey, 25);
+		}
+	}
+	&-item-comment{
+		float : right;
+		font-size: 1.4rem;
 	}
 }
