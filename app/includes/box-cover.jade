@@ -5,8 +5,8 @@
         img(src=slider.src alt=slider.alt)
 
   .block-info
-    .pre-title #{cover.preTitle}
-    .main-title.c-white #{cover.title}
+    span.title-spacing.pre-title #{cover.preTitle}
+    h3.main-title.c-white #{cover.title}
     - if (cover.description)
       .key-sentence #{cover.description}
     - if (cover.ariane)

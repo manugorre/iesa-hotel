@@ -32,7 +32,7 @@ $font-headings: lora, Arial;
 @font-face{
   font-family: "source sans pro";
   font-style: normal;
-  font-weight: lighter;
+  font-weight: 200;
   src: url("../fonts/sourcesanspro/SourceSansPro-Light.ttf");
 }
 
@@ -46,6 +46,6 @@ $font-headings: lora, Arial;
 @font-face{
   font-family: "source sans pro";
   font-style: normal;
-  font-weight: bolder;
+  font-weight: 800;
   src: url("../fonts/sourcesanspro/SourceSansPro-Bold.ttf");
 }

@@ -56,7 +56,7 @@ ul {
   }
 }
 
-.f0{
+.f0 {
   font-size: 0px;
 }
 
@@ -74,12 +74,26 @@ ul {
 
 .height-zero {
   height: 0;
+  margin-bottom: 110px;
 }
 
 .main-title {
   font-family: $font-headings;
+  font-weight: bold;
   color: black;
   font-size: 3.5rem;
+  margin: 0;
+}
+
+.title-spacing {
+  font-family: $font-body;
+  color: darkgray;
+  letter-spacing: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .medium-title {

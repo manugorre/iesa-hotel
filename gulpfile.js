@@ -19,8 +19,6 @@ var dev = true;
 gulp.task('views', function () {
   return gulp.src('app/*.jade')
     .pipe(data( function(file) {
-      console.log(file.path);
-      console.log(path.basename(file.path, '.jade'));
       return JSON.parse(
         fs.readFileSync('./data/' + path.basename(file.path, '.jade') + '.json')
       );
