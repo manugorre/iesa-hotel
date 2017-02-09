@@ -1,0 +1,115 @@
+extends layouts/default
+
+block content
+
+  include includes/header
+
+  main.row.room-container
+    .col-md-12
+      .row
+        .col-md-12.nopadding
+          include includes/box-cover
+      .row
+        .col-md-12.height-zero.up-me
+          include includes/box-reservation
+      .row
+        .col-md-12.room-list-container.bg-white
+          .row
+            .col-md-12.room-list-item
+              .row
+                .col-md-6.room-item-img.nopadding
+                  img(src="./images/chambre.jpg", alt="")
+                .col-md-6.room-item-description-container.nopadding
+                  .eazy-padding
+                    h3.room-item-title Chambres Classiques
+                    .room-item-price
+                      | A partir de
+                      span.price-tag 250€
+                      span.dark / Nuit
+                    .room-item-description Pensées autour de la thématique de l’Inde. Parfait pour une petite escapade
+                    .room-item-status
+                      ul
+                        li
+                          | Lits :
+                          span 2
+                        li
+                          | Place :
+                          span 4-6
+                    a(href="room.html").room-item-link Voir détails →
+          .row
+            .col-md-12.room-list-item
+              .row
+                .col-md-6.col-md-push-6.room-item-img.nopadding
+                  img(src="./images/chambre.jpg", alt="")
+                .col-md-6.col-md-pull-6.room-item-description-container.nopadding
+                  .eazy-padding
+                    h3.room-item-title Chambres Conforts
+                    .room-item-price
+                      | A partir de
+                      span.price-tag 350€
+                      span.dark / Nuit
+                    .room-item-description Pensées autour de la thématique de l’Asie, cette chambre possède tout ce qu'il faut pour oublier tous les soucis de la vie.
+                    .room-item-status
+                      ul
+                        li
+                          | Lits :
+                          span 2
+                        li
+                          | Place :
+                          span 4-6
+                    a(href="room.html").room-item-link Voir détails →
+          .row
+            .col-md-12.room-list-item
+              .row
+                .col-md-6.room-item-img.nopadding
+                  img(src="./images/chambre.jpg", alt="")
+                .col-md-6.room-item-description-container.nopadding
+                  .eazy-padding
+                    h3.room-item-title Chambres Luxes
+                    .room-item-price
+                      | A partir de
+                      span.price-tag 600€
+                      span.dark / Nuit
+                    .room-item-description Pensées autour de la thématique de l’Amérique du Sud, votre futur chambre vous permettra d'inviter toute votre famille.
+                    .room-item-status
+                      ul
+                        li
+                          | Lits :
+                          span 4
+                        li
+                          | Place :
+                          span 6-8
+                    a(href="room.html").room-item-link Voir détails →
+          .row
+            .col-md-12.room-list-item
+              .row
+                .col-md-6.col-md-push-6.room-item-img.nopadding
+                  img(src="./images/chambre.jpg", alt="")
+                .col-md-6.col-md-pull-6.room-item-description-container.nopadding
+                  .eazy-padding
+                    h3.room-item-title Suites
+                    .room-item-price
+                      | A partir de
+                      span.price-tag 1000€
+                      span.dark / Nuit
+                    .room-item-description Pensées autour de la thématique de l’Amérique du Sud. Vous n'aurez plus jamais envie de nous quitter.
+                    .room-item-status
+                      ul
+                        li
+                          | Lits :
+                          span 4
+                        li
+                          | Place :
+                          span 8-10
+                    a(href="room.html").room-item-link Voir détails →
+
+
+
+
+
+      .row
+        .col-md-12.bg-motif
+          include includes/box-review
+
+
+  include includes/footer

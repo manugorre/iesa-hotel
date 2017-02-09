@@ -3,7 +3,8 @@ extends layouts/default
 block content
 
   include includes/header
-
+  .cookie
+    .cookie-text En poursuivant votre navigation sur ce site, vous acceptez les conditions d'utilisation et l'utilisation de cookie pour réaliser des statistiques de visite.
   main.row
     .col-md-12.bg-motif
       .row
@@ -14,7 +15,14 @@ block content
           include includes/box-reservation
       .row
         .col-md-12
+          include includes/room-space
+      .row
+        .col-md-12
           span.title-spacing.text-center exploré
-          h3.main-title.text-center Latest from our blog
+          h3.main-title.text-center Dernières actualitées
           include includes/box-cards
+      .row
+        .col-md-12
+          include includes/contact-space
+
   include includes/footer

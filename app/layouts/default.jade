@@ -2,13 +2,15 @@ doctype html
 html.no-js(lang='')
   head
     meta(charset='utf-8')
-    meta(name='description', content='')
+    meta(name='description', content='Découvrez Parimis Hotel, un hôtel luxueux et hors du temps, un lieu suspendu entre charme parisien, cultures et médecines du monde ancestral.')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    title iesa hotel
+    meta(property='og:title', content='Parimis Hotel')
+    meta(property='og:description', content='Parimis Hotel, un hôtel luxueux et hors du temps, au coeur de Paris.')
+    meta(property='og:url', content='https://parimis.space')
+    meta(property='og:image', content='./images/chambre.jpg')
+    title IESA Parimis Hotel
     link(rel='apple-touch-icon', href='apple-touch-icon.png')
     // Place favicon.ico in the root directory
-    // build:css styles/vendor.css
-    // bower:css
     // endbower
     // endbuild
     // build:css styles/main.css
@@ -20,16 +22,16 @@ html.no-js(lang='')
   body.container
     block content
     // Google Analytics: change UA-XXXXX-X to be your site's ID.
-    //script.
-      //(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      //  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      //  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      //  e.src='https://www.google-analytics.com/analytics.js';
-      //  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      //ga('create', 'UA-91045877-1', 'auto');
-      //ga('send', 'pageview');
-    script(src='https://code.getmdl.io/1.3.0/material.min.js')
+    script.
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create', 'UA-91045877-1', 'auto');
+      ga('send', 'pageview');
     // build:js scripts/vendor.js
+    script(src='https://code.getmdl.io/1.3.0/material.min.js')
     // bower:js
     script(src='/bower_components/jquery/dist/jquery.slim.min.js')
     script(src='/bower_components/slick-carousel/slick/slick.min.js')
@@ -39,4 +41,9 @@ html.no-js(lang='')
     script(src='https://code.getmdl.io/1.3.0/material.min.js')
     script(src='scripts/main.js')
     script(src='scripts/slider.js')
+    script(src='scripts/box-reservation.js')
+    script(src='scripts/ggmap.js')
+    script(src='scripts/iscroll.js')
+    script(src='scripts/scroll.js')
     // endbuild
+    script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2hiBLlHWPtnBxnb96IDk1xg7PBfkGzAc&callback=initMap")

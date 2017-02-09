@@ -18,9 +18,9 @@
     initSlider: function() {
       $('.slider').slick({
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
         infinite: true,
-        speed: 500,
+        speed: 800,
         fade: true,
         cssEase: 'ease',
         mobileFirst: true,

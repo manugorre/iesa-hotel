@@ -1,0 +1,67 @@
+.contact-container {
+  width: 480px;
+  height: 320px;
+  background: white;
+  position: fixed;
+}
+
+.contact-space {
+  background: white;
+}
+
+#map {
+  height: 500px;
+}
+
+.contact-card{
+  padding: 70px;
+}
+.contact-space {
+  .main-title {
+    margin: 0 0 40px 0;
+  }
+}
+
+.city {
+  font-family: $font-headings;
+  font-size: 2rem;
+  font-weight: 600;
+  span {
+    color: darkgray;
+  }
+}
+
+.adress {
+  font-family: $font-body;
+  color: darkgray;
+  font-size: 1.3rem;
+}
+
+.mail {
+  font-family: $font-headings;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: 800;
+  a {
+    color: darkgray;
+    font-size: 1.3rem;
+    font-weight: 200;
+    font-family: $font-body;
+  }
+}
+
+.number {
+  font-family: $font-body;
+  color: darkgray;
+  margin-top: 50px;
+  display: block;
+  span {
+    display: block;
+    font-family: $font-headings;
+    font-size: 2rem;
+    color: black;
+  }
+}
+.contact-us{
+  font-size: 22px;
+}

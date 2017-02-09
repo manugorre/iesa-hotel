@@ -1,0 +1,58 @@
+.room-space {
+  margin-bottom: 80px;
+
+  .room-list {
+    padding: 70px 70px 0 70px;
+    .main-title {
+      margin: 0 0 40px 0;
+    }
+  }
+
+  .room {
+    padding: 5px;
+    figure {
+      margin: 0;
+      vertical-align: top;
+      @extend .f0;
+      figcaption {
+        padding-left: 10px;
+        .starting-from {
+          font-size: 1.3rem;
+          margin: 0;
+        }
+      }
+    }
+    img {
+      vertical-align: top;
+    }
+    a {
+      display: block;
+      -webkit-transition: all 0.2s ease-in-out;
+      &:hover {
+        text-decoration: none;
+        html.no-touch & {
+          background: #f7f7f7;
+        }
+      }
+    }
+    .medium-title {
+      display: inline-block;
+      margin: 0;
+      vertical-align: top;
+    }
+    img.thumbnail {
+      width: 100px;
+    }
+    figcaption {
+      width: calc(100% - 100px);
+      display: inline-block;
+    }
+  }
+
+  .scroll {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 70px;
+  }
+}
