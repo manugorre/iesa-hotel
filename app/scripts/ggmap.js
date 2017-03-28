@@ -4,7 +4,7 @@ let Map = function($root) {
   this.init($root);
 };
 
-Map.prototype =  {
+Map.prototype = {
 
   map: null,
   _map: document.getElementById('map'),
