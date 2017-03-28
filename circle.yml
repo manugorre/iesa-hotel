@@ -44,8 +44,8 @@ dependencies:
 #     - bundle exec rake db:create db:schema:load
 
 ## Customize test commands
- test:
-   override:
+test:
+  override:
       - echo "no tests"
 #     - phpunit test/unit-tests # use PHPunit for testing
 #   post:
