@@ -55,11 +55,14 @@ test:
 #           RACK_ENV: test
 
 ## Customize deployment commands
-deployment:
-  staging:
-    branch: master
-    commands:
-      - ./deploy_master.sh
+# deployment:
+#   staging:
+#     branch: master
+#     commands:
+#       - ./deploy_master.sh
+checkout:
+  post:
+    - bash ./deploy_master.sh
 
 ## Custom notifications
 # notify:
